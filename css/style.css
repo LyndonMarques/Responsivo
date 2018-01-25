@@ -1,0 +1,305 @@
+body{
+    background-color: #f3f3f3;
+}
+h2 {
+    color: #be2222;
+    padding-bottom: 3px;
+    border-bottom: 5px solid #be2222;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 30px !important;
+    font-weight: 600;
+}
+h2.yellow_color{
+    color: #fec62f;
+    border-bottom: 5px solid #fec62f;
+}
+
+h5{
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.section{
+    margin-bottom: 60px;
+}
+
+.section_four_bg{
+    background: url("../img/comida.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section_three{
+    background: url("../img/section_background.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 450px;
+}
+
+.section_three_content{
+    display: inline-flex;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+
+.vcenter {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.slider_hidden, .slider_mobile_hidden, .slider_tablet_hidden{
+    display: none;
+}
+
+.shape{
+    width: 332px;
+    height: 165px;
+    position: absolute;
+    top:0;
+    z-index: 999;
+    left: 0;
+    right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/slider/shape.png");
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+
+}
+
+.retangulo{
+    position: relative;
+    margin-top: -40px;
+    border-top: 40px solid #ff000000;
+    border-right: 700px solid #ffb820;
+    border-bottom: 40px solid #ff000000;
+    border-left: 700px solid #ffb820;
+}
+/* Breakpoints */
+@media only screen and (min-width: 319px) and (max-width: 599px) {
+
+    .section_one_content{
+        padding: 0 20px 0 20px;
+    }
+
+    .section_three{
+        padding: 20px 0 30px 0;
+        height: 530px;
+        margin-bottom: 10px;
+    }
+
+    .section_three_content{
+        display: block;
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+    .flaxbox_padding{
+        padding: 20px 30px 10px 30px;
+        font-size: 17px;
+    }
+    .flaxbox_padding h5{
+        font-size: 17px;
+    }
+
+    .section_four_bg{
+        background: url("../img/comida_mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 1100px;
+    }
+    .section_four_content{
+        margin-top: 230px;
+        padding: 0 50px 0 55px;
+    }
+
+    .slider_mobile_hidden{
+        display: block;
+    }
+
+    .shape{
+        left: -5%;
+        right: 0;
+        background-position: top;
+        background-size: 50% 50%;
+    }
+
+    .carousel-caption{
+        text-align: left;
+        bottom: 40px;
+        left: 20%;
+    }
+    .carousel-caption h1{
+        font-size: 45px;
+    }
+
+    .retangulo{
+        margin-top: -10px;
+        border-top: 10px solid #ff000000;
+        border-right: 150px solid #ffb820;
+        border-bottom: 10px solid #ff000000;
+        border-left: 150px solid #ffb820;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 940px) {
+    .section_one_content{
+        padding: 0 40px 0 40px;
+        width: 80%;
+    }
+    .section_three_img{
+        overflow: hidden;
+    }
+    .img-responsive{
+        max-width: none;
+    }
+    .vcenter{
+        padding: 0;
+    }
+    .flaxbox_padding {
+        padding: 20px 30px 0 30px;
+        font-size: 16px;
+    }
+    .section_four_bg{
+        background: url("../img/comida_tablet.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 800px;
+    }
+    .section_four_content {
+        padding: 60px 70px 0 60px;
+    }
+
+    .slider_tablet_hidden{
+        display: block;
+    }
+
+    .shape{
+        right: 0;
+        background-position: top;
+        background-size: 50% 50%;
+    }
+
+    .retangulo{
+        margin-top: -30px;
+        border-top: 30px solid #ff000000;
+        border-right: 300px solid #ffb820;
+        border-bottom: 30px solid #ff000000;
+        border-left: 300px solid #ffb820;
+    }
+}
+
+@media only screen and (min-width: 941px) and (max-width: 1260px) {
+    .section_one_content{
+        padding: 0 40px 0 40px;
+        width: 80%;
+    }
+    .section_three_img{
+        overflow: hidden;
+    }
+    .img-responsive{
+        max-width: none;
+    }
+    .vcenter{
+        padding: 0;
+    }
+
+    .flaxbox_padding {
+        padding: 20px 30px 0 30px;
+        font-size: 16px;
+    }
+
+    .section_four_content {
+        padding: 60px 70px 0 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1240px)  {
+    .flaxbox_padding{
+        padding: 20px 30px 0 30px;
+    }
+    .flaxbox_padding p{
+        font-size: 13px;
+    }
+
+    .section_four_bg{
+        height: 650px;
+    }
+
+    .section_four_content {
+        padding: 60px 70px 0 60px;
+    }
+
+    .slider_hidden{
+        display: block;
+    }
+
+    .carousel-caption{
+        text-align: left;
+        bottom: 140px;
+        left: 36%;
+    }
+    .carousel-caption h1{
+        font-size: 65px;
+    }
+
+    .retangulo{
+        border-right: 670px solid #ffb820;
+        border-bottom: 40px solid #ff000000;
+        border-left: 670px solid #ffb820;
+    }
+}
+
+@media only screen and (min-width: 1439px){
+    .retangulo{
+        border-right: 720px solid #ffb820;
+        border-bottom: 40px solid #ff000000;
+        border-left: 720px solid #ffb820;
+    }
+}
+
+@media only screen and (min-width: 1681px) and (max-width: 1930px){
+    .section_four_bg{
+        background-position: center center;
+        height: 850px;
+    }
+
+    .flaxbox_padding p{
+        font-size: 15px;
+    }
+
+    .section_four_content{
+        padding: 100px 20px 0 40px;
+    }
+
+    .slider_hidden{
+        display: block;
+    }
+
+    .carousel-caption{
+        text-align: left;
+        bottom: 170px;
+        left: 36%;
+    }
+    .carousel-caption h1{
+        font-size: 70px;
+    }
+
+    .retangulo{
+        border-right: 950px solid #ffb820;
+        border-bottom: 40px solid #ff000000;
+        border-left: 950px solid #ffb820;
+    }
+}
